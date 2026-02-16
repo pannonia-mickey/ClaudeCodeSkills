@@ -2,16 +2,24 @@
 
 ## Complete Capability Matrix
 
-### aspnet-mvc-expert
+### angular-expert
 | Capability | Examples |
 |-----------|----------|
-| Architecture | Clean Architecture, Vertical Slice, CQRS, MediatR, DI |
-| Controllers | Routing, model binding, action filters, view components |
-| Security | Identity, JWT/Cookie auth, policy-based authorization, CSRF |
-| EF Core | DbContext, Fluent API, migrations, query optimization |
-| Testing | xUnit, Moq/NSubstitute, WebApplicationFactory, integration tests |
-| Razor | Razor Pages, Tag Helpers, view components, templates |
-| Minimal APIs | Route handlers, endpoint filters, Results pattern |
+| Components | Standalone components, signals, control flow (@if, @for), lifecycle |
+| Routing | Lazy loading, guards, resolvers, nested routes |
+| State | NgRx (signals store), component store, RxJS patterns |
+| Forms | Reactive forms, typed forms, validation, dynamic forms |
+| Testing | Jest, Cypress, Testing Library, component harness |
+| Performance | Change detection (OnPush, signals), lazy loading, SSR |
+
+### cloud-expert
+| Capability | Examples |
+|-----------|----------|
+| AWS Services | Lambda, ECS, DynamoDB, S3, CloudFront, SQS/SNS |
+| Infrastructure | CDK, multi-region DR, VPC design, IAM, WAF |
+| Serverless | Event-driven patterns, Step Functions, cold start optimization |
+| Architecture | Well-Architected, circuit breaker, bulkhead, cost optimization |
+| Security | IAM least-privilege, KMS encryption, VPC endpoints, GuardDuty |
 
 ### cpp-expert
 | Capability | Examples |
@@ -73,16 +81,44 @@
 | Performance | Profiling, optimization, caching |
 | Scripting | CLI tools, automation, data processing |
 
-### csharp-expert
+### database-expert
+| Capability | Examples |
+|-----------|----------|
+| Schema Design | Normalization, denormalization, indexing strategies, partitioning |
+| SQL | PostgreSQL, MySQL, window functions, CTEs, query optimization |
+| NoSQL | MongoDB, DynamoDB, Redis, data modeling patterns |
+| ORMs | Prisma, Drizzle, TypeORM, SQLAlchemy, EF Core integration |
+| Migrations | Schema versioning, zero-downtime migrations, rollback strategies |
+| Performance | EXPLAIN analysis, index tuning, connection pooling, caching |
+
+### devops-expert
+| Capability | Examples |
+|-----------|----------|
+| CI/CD | GitHub Actions, GitLab CI, deployment strategies (canary, blue-green) |
+| IaC | Terraform, Pulumi, modules, state management, drift detection |
+| Monitoring | Prometheus, Grafana, OpenTelemetry, SLI/SLO, alerting |
+| Incidents | Runbooks, postmortems, on-call, chaos engineering |
+| Security | Supply chain (SBOM, Sigstore), Vault, OPA, compliance automation |
+
+### dotnet-expert
 | Capability | Examples |
 |-----------|----------|
 | C# Language | Records, pattern matching, LINQ, generics |
-| ASP.NET Core | Controllers, minimal APIs, middleware, DI |
+| ASP.NET Core | Controllers, Minimal APIs, middleware, DI |
 | EF Core | DbContext, Fluent API, migrations, queries |
 | Testing | xUnit, NUnit, Moq, WebApplicationFactory |
 | Architecture | Clean Architecture, CQRS, MediatR, DDD |
 | Blazor | Server/WASM, components, state management |
 | Performance | Span, async, caching, compiled queries |
+
+### go-expert
+| Capability | Examples |
+|-----------|----------|
+| Language | Interfaces, generics, error handling, project structure |
+| Concurrency | Goroutines, channels, errgroup, worker pools, select |
+| API Design | net/http 1.22+, Gin, middleware, gRPC, OpenAPI |
+| Testing | Table-driven tests, testify, gomock, benchmarks, fuzz testing |
+| Security | Input validation, crypto, JWT, secure HTTP, govulncheck |
 
 ### langchain-expert
 | Capability | Examples |
@@ -94,6 +130,24 @@
 | Vector Stores | Chroma, FAISS, Pinecone, Weaviate |
 | Memory | Buffer, summary, conversation history |
 | Evaluation | LangSmith, custom evaluators, testing |
+
+### nextjs-expert
+| Capability | Examples |
+|-----------|----------|
+| App Router | File conventions, layouts, loading/error states, parallel routes |
+| Data Fetching | Server Components, generateStaticParams, streaming, Server Actions |
+| Caching | Request memoization, data cache, full route cache, revalidation |
+| Performance | next/image, next/font, bundle analysis, PPR, rendering strategies |
+| Security | CSP with nonce, NextAuth.js v5, server-only guards, env safety |
+
+### nodejs-expert
+| Capability | Examples |
+|-----------|----------|
+| Frameworks | Express, NestJS, Fastify, middleware patterns |
+| Runtime | Event loop, streams, worker threads, child processes |
+| APIs | REST design, GraphQL, WebSocket, rate limiting |
+| Architecture | Dependency injection, CQRS, event-driven, microservices |
+| Security | Helmet, input validation (Zod), JWT, OWASP patterns |
 
 ### docker-expert
 | Capability | Examples |
@@ -115,6 +169,33 @@
 | Framework SEO | SSR/SSG/ISR implications, Next.js/Nuxt/Remix/Astro SEO |
 | Rich Results | Google Rich Results requirements, testing, validation |
 
+### rust-expert
+| Capability | Examples |
+|-----------|----------|
+| Ownership | Borrowing, lifetimes, lifetime elision, Pin/Unpin |
+| Traits/Generics | Trait bounds, impl Trait, associated types, GATs |
+| Concurrency | async/await, Tokio, channels, Rayon, Send/Sync |
+| Testing | Unit tests, proptest, cargo-fuzz, wiremock, insta snapshots |
+| Security | Unsafe guidelines, FFI, crypto (RustCrypto), cargo-audit |
+
+### testing-expert
+| Capability | Examples |
+|-----------|----------|
+| E2E Testing | Playwright, cross-browser, visual regression, accessibility |
+| Unit/Integration | Vitest, Jest, mocking strategies, test doubles, fixtures |
+| Performance | k6 load testing, Artillery, benchmarks, Lighthouse CI |
+| Strategy | Risk-based coverage, mutation testing, contract testing (Pact) |
+| Security | SAST (Semgrep), DAST (ZAP), dependency scanning, penetration testing |
+
+### typescript-expert
+| Capability | Examples |
+|-----------|----------|
+| Type System | Generics, conditional types, mapped types, template literals |
+| Patterns | Branded types, discriminated unions, type guards, builder pattern |
+| Tooling | tsconfig, project references, declaration files, ESLint |
+| Migration | JS-to-TS strategies, strict mode adoption, any elimination |
+| Runtime | Zod validation, type-safe APIs, ts-pattern matching |
+
 ### uxui-designer
 | Capability | Examples |
 |-----------|----------|
@@ -125,6 +206,15 @@
 | Interaction Design | Micro-interactions, state transitions, animation, loading patterns |
 | Component Specs | All states (hover, focus, active, disabled), responsive behavior |
 | Form Design | Inline validation, progressive disclosure, error recovery |
+
+### vue-expert
+| Capability | Examples |
+|-----------|----------|
+| Composition API | script setup, ref/reactive, computed, watch, composables |
+| Components | Slots, v-model, dynamic components, Teleport, Transitions |
+| Router & State | Vue Router 4, Pinia stores, navigation guards, persistence |
+| Nuxt 3 | Server routes, middleware, useFetch, hybrid rendering, SEO |
+| Testing | Vitest, Vue Test Utils, Playwright, Pinia testing |
 
 ## Overlap Resolution Rules
 
@@ -161,16 +251,14 @@ Task: "Create React components that call a Django API"
   Split into two tasks, one per agent
 ```
 
-### Rule 4: ASP.NET MVC vs C# General
+### Rule 4: .NET — dotnet-expert Covers All
 
 ```
 Task: "Review my ASP.NET Core controller and fix EF Core N+1"
-  ✅ aspnet-mvc-expert (ASP.NET-specific patterns, EF Core in MVC context)
-  ❌ csharp-expert (knows C# but not MVC-specific conventions)
+  ✅ dotnet-expert (covers ASP.NET Core, EF Core, and C# language)
 
 Task: "Implement a C# library with generics and LINQ"
-  ❌ aspnet-mvc-expert (overkill, not MVC-specific)
-  ✅ csharp-expert (general C# language expertise)
+  ✅ dotnet-expert (covers all C#/.NET work)
 ```
 
 ### Rule 5: SEO and UX/UI Delegation
@@ -202,7 +290,67 @@ Task: "Write Python bindings for a C++ library using pybind11"
   Split into two tasks, one per agent
 ```
 
-### Rule 7: Architecture and Planning to team-planner
+### Rule 7: Next.js vs React
+
+```
+Task: "Build a React component with hooks and state"
+  ✅ react-expert (pure React, no framework)
+  ❌ nextjs-expert (overkill for non-Next.js work)
+
+Task: "Set up Server Components with data fetching in Next.js"
+  ✅ nextjs-expert (Next.js-specific RSC patterns)
+  ❌ react-expert (knows React but not Next.js specifics)
+```
+
+### Rule 8: Node.js vs TypeScript
+
+```
+Task: "Build an Express API with middleware"
+  ✅ nodejs-expert (runtime and framework expertise)
+  ❌ typescript-expert (knows TS but not Node.js patterns)
+
+Task: "Create a shared TypeScript type library"
+  ✅ typescript-expert (pure type system work)
+  ❌ nodejs-expert (knows TS but not deep type patterns)
+```
+
+### Rule 9: Cloud vs DevOps
+
+```
+Task: "Design a multi-region DR architecture on AWS"
+  ✅ cloud-expert (cloud architecture and AWS services)
+  ❌ devops-expert (knows infra but not cloud-specific patterns)
+
+Task: "Set up Terraform modules for AWS resources"
+  ✅ devops-expert (IaC expertise) + cloud-expert (AWS resource design)
+  Split into architecture (cloud-expert) and IaC implementation (devops-expert)
+```
+
+### Rule 10: Testing vs Framework Experts
+
+```
+Task: "Write unit tests for a React component"
+  ✅ react-expert (framework-specific test patterns)
+  ❌ testing-expert (general strategy, not framework-specific)
+
+Task: "Design an E2E test strategy and set up Playwright"
+  ✅ testing-expert (cross-cutting test expertise)
+  ❌ react-expert (knows testing but not strategy depth)
+```
+
+### Rule 11: Database Expert vs ORM Experts
+
+```
+Task: "Optimize slow PostgreSQL queries with EXPLAIN"
+  ✅ database-expert (database-specific query optimization)
+  ❌ django-expert (knows ORM but not raw SQL optimization)
+
+Task: "Design Django models with proper relationships"
+  ✅ django-expert (Django ORM-specific patterns)
+  ❌ database-expert (knows schema but not Django ORM conventions)
+```
+
+### Rule 12: Architecture and Planning to team-planner
 
 ```
 Task: "Decide between Django and FastAPI for this project"
@@ -284,16 +432,53 @@ Task: "Decide between Django and FastAPI for this project"
 
 ### Database → API Handoff
 
-1. Database modeling agent produces:
+1. database-expert produces:
    - Entity relationship diagram / model definitions
    - Field types and constraints
    - Index definitions
    - Migration files
 
-2. API agent consumes:
+2. API agent (Django/FastAPI/Node.js/Go) consumes:
    - Model imports and querysets
    - Serializer/schema field mapping
    - Relationship traversal patterns
+
+### DevOps → All Teams Handoff
+
+1. devops-expert produces:
+   - CI/CD pipeline configuration
+   - Deployment strategy (canary, blue-green)
+   - Monitoring dashboards and alerts
+   - Environment configuration
+
+2. All agents consume:
+   - Build and test commands for their stack
+   - Environment variable contracts
+   - Deployment triggers and hooks
+
+### Cloud → DevOps Handoff
+
+1. cloud-expert produces:
+   - Architecture diagrams and service selections
+   - IAM policies and security groups
+   - Cost estimates and optimization recommendations
+
+2. devops-expert consumes:
+   - Infrastructure requirements for IaC implementation
+   - Monitoring endpoints and health check specifications
+   - Deployment targets and scaling policies
+
+### Testing → All Teams Handoff
+
+1. testing-expert produces:
+   - Test strategy and coverage targets
+   - E2E test scenarios and acceptance criteria
+   - Performance budgets and load test configurations
+
+2. Framework agents consume:
+   - Unit test requirements for their components
+   - Integration test contracts
+   - Performance targets to meet
 
 ## Integration Checkpoint Template
 

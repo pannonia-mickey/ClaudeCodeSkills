@@ -27,12 +27,28 @@ Assign each functional area to the agent with primary expertise:
 
 | Functional Area | Primary Agent | Backup Agent |
 |----------------|---------------|--------------|
+| Angular components | angular-expert | typescript-expert |
+| ASP.NET Core / .NET | dotnet-expert | — |
+| C++ systems code | cpp-expert | rust-expert |
+| CI/CD pipelines | devops-expert | docker-expert |
+| Cloud infrastructure | cloud-expert | devops-expert |
+| Database design/queries | database-expert | — |
 | Django models/views | django-expert | python-expert |
-| React components | react-expert | — |
+| Docker containers | docker-expert | devops-expert |
+| E2E/performance testing | testing-expert | — |
 | FastAPI endpoints | fastapi-expert | python-expert |
 | General Python | python-expert | — |
-| C#/.NET code | csharp-expert | — |
+| Go services | go-expert | — |
 | LangChain pipelines | langchain-expert | python-expert |
+| Next.js features | nextjs-expert | react-expert |
+| Node.js backend | nodejs-expert | typescript-expert |
+| React components | react-expert | — |
+| Rust systems code | rust-expert | cpp-expert |
+| SEO optimization | seo-expert | — |
+| Styling (Tailwind) | tailwind-expert | — |
+| TypeScript types/tooling | typescript-expert | — |
+| UX/UI design | uxui-designer | — |
+| Vue components | vue-expert | typescript-expert |
 | Architecture decisions | team-planner | — |
 
 ### Step 3: Define Dependencies

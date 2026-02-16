@@ -13,13 +13,28 @@ This skill provides the orchestration framework for coordinating specialist agen
 
 | Agent | Primary Domain | Key Capabilities |
 |-------|---------------|-----------------|
+| angular-expert | Angular 18+ | Components, signals, RxJS, routing, NgRx, testing |
+| cloud-expert | AWS, Serverless | Lambda, CDK, multi-region DR, cost optimization, IAM |
+| cpp-expert | C++ (C++11–C++23) | Systems programming, memory safety, concurrency, CMake |
+| database-expert | SQL, NoSQL, ORMs | Schema design, query optimization, migrations, Redis, MongoDB |
+| devops-expert | CI/CD, IaC, Monitoring | GitHub Actions, Terraform, Prometheus, Grafana, incident management |
 | django-expert | Django 5.+, DRF | Models, views, serializers, migrations, admin, signals, middleware |
-| react-expert | React 18+, TypeScript | Components, hooks, state management, Next.js, testing |
+| docker-expert | Docker, Compose | Dockerfiles, multi-stage builds, Compose, container security |
+| dotnet-expert | C#/.NET 8+, ASP.NET | ASP.NET Core, EF Core, LINQ, DI, Blazor, xUnit, Minimal APIs |
 | fastapi-expert | FastAPI, Pydantic v2 | Async endpoints, DI with Depends(), WebSockets, OpenAPI |
-| python-expert | Core Python | Design patterns, type hints, packaging, pytest, async/await |
-| csharp-expert | C#/.NET 8+ | ASP.NET Core, EF Core, LINQ, DI, Blazor, xUnit |
+| go-expert | Go 1.22+ | net/http, Gin, gRPC, goroutines, channels, CLIs (cobra) |
 | langchain-expert | LangChain, LCEL | Chains, agents, RAG, vector stores, LangSmith |
-| angularjs-expert | AngularJS 1.x | Components, directives, services, ui-router, security, migration |
+| nextjs-expert | Next.js 14+ | App Router, RSC, Server Actions, ISR, caching, middleware |
+| nodejs-expert | Node.js 20+ | Express, NestJS, event loop, streams, worker threads |
+| python-expert | Core Python | Design patterns, type hints, packaging, pytest, async/await |
+| react-expert | React 18+, TypeScript | Components, hooks, state management, testing |
+| rust-expert | Rust | Ownership, traits, async/Tokio, FFI, WebAssembly |
+| seo-expert | Technical SEO | Meta tags, structured data, Core Web Vitals, crawlability |
+| tailwind-expert | Tailwind CSS | Utility-first styling, responsive design, custom themes |
+| testing-expert | QA, E2E, Performance | Test strategy, Playwright, k6, contract testing, security scanning |
+| typescript-expert | TypeScript 5+ | Type system, generics, tooling, migration, project config |
+| uxui-designer | UX/UI Design | Design systems, accessibility, responsive layouts, component specs |
+| vue-expert | Vue 3, Nuxt 3 | Composition API, Pinia, Vue Router, SSR, component design |
 
 ## Task Analysis Workflow
 
@@ -66,6 +81,20 @@ When a task could belong to multiple agents:
 | React + TypeScript types | react-expert | Component-specific typing |
 | Python async patterns | python-expert | General language feature |
 | LangChain + FastAPI integration | langchain-expert | AI-specific orchestration |
+| Next.js page with React components | nextjs-expert | Next.js-specific patterns (RSC, routing) |
+| Node.js + TypeScript backend | nodejs-expert | Runtime-specific knowledge |
+| TypeScript type utility library | typescript-expert | Pure type system work |
+| Vue + Nuxt SSR | vue-expert | Framework-specific SSR patterns |
+| Angular + TypeScript types | angular-expert | Angular-specific type patterns |
+| CI/CD pipeline setup | devops-expert | Pipeline and deployment expertise |
+| Docker + CI integration | docker-expert (containers) + devops-expert (CI) | Split by concern |
+| AWS infrastructure with Terraform | cloud-expert (architecture) + devops-expert (IaC) | Split by concern |
+| Database schema for Django | django-expert | Framework ORM integration |
+| Database schema (standalone) | database-expert | Pure database design |
+| E2E test strategy | testing-expert | Cross-cutting test expertise |
+| Go gRPC service | go-expert | Go-specific patterns |
+| Rust + C FFI | rust-expert (Rust side) + cpp-expert (C side) | Split by language |
+| .NET + EF Core migrations | dotnet-expert | Framework-specific ORM |
 
 ## Cross-Agent Integration Patterns
 
@@ -114,9 +143,40 @@ Schedule verification points where agents' work must align:
 3. react-expert → Chat UI, streaming display
 
 ### .NET Enterprise Application
-1. csharp-expert → Domain, services, EF Core, APIs
+1. dotnet-expert → Domain, services, EF Core, APIs
 2. react-expert → Frontend (if SPA)
-3. python-expert → Scripting/automation (if needed)
+3. database-expert → Schema design, query optimization
+
+### Full-Stack Node.js App
+1. nodejs-expert → Express/NestJS APIs, middleware
+2. typescript-expert → Shared types, strict config
+3. react-expert → Frontend components, state
+4. database-expert → Data layer, migrations
+
+### Cloud-Native Microservices
+1. go-expert → Service implementation, gRPC
+2. docker-expert → Containerization
+3. cloud-expert → AWS infrastructure, serverless
+4. devops-expert → CI/CD pipelines, monitoring
+
+### Modern Angular App
+1. angular-expert → Components, signals, routing
+2. typescript-expert → Shared types, tooling
+3. tailwind-expert → Styling, design system
+
+### Vue/Nuxt Full-Stack
+1. vue-expert → Components, Pinia, Nuxt server routes
+2. typescript-expert → Type safety, shared types
+3. database-expert → Data layer
+
+### End-to-End Testing Pipeline
+1. testing-expert → Strategy, Playwright tests, k6 load tests
+2. devops-expert → CI integration, test environments
+
+### Rust Systems Project
+1. rust-expert → Core implementation, async/Tokio
+2. devops-expert → CI/CD, cross-compilation
+3. testing-expert → Fuzzing strategy, benchmarks
 
 ## Additional Resources
 
