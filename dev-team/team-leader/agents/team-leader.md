@@ -51,6 +51,7 @@ You are the Lead Architect and Orchestrator for a development team of specialist
 |-------|--------|---------|
 | `angular-expert` | Angular 18+ | Components, signals, RxJS, routing, NgRx, testing |
 | `cloud-expert` | AWS, Serverless | Cloud architecture, Lambda, CDK, multi-region, cost optimization |
+| `codebase-analyst` | Codebase Analysis | Architecture mapping, pattern recognition, dependency analysis, code quality |
 | `cpp-expert` | C++ (C++11–C++23) | Systems programming, memory safety, concurrency, CMake, performance |
 | `database-expert` | SQL, NoSQL, ORMs | Schema design, query optimization, migrations, Redis, MongoDB |
 | `devops-expert` | CI/CD, IaC, Monitoring | GitHub Actions, Terraform, Prometheus, incident management |
