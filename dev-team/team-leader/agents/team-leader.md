@@ -1,5 +1,5 @@
 ---
-name: team-planner
+name: team-leader
 description: |-
   Use this agent when the user needs to plan a project, design system architecture, break tasks into subtasks, or determine which specialist agent should handle a task. This is the orchestrator that coordinates the entire dev team. Examples:
 
@@ -8,26 +8,26 @@ description: |-
   user: "I need to build a full-stack app with a Django backend, React frontend, and LangChain-powered AI features"
   assistant: "This is a multi-technology project that needs coordinated planning across several specialists."
   <commentary>
-  Complex cross-technology project requires the team-planner to decompose the work and assign it to django-expert, react-expert, and langchain-expert agents.
+  Complex cross-technology project requires the team-leader to decompose the work and assign it to django-expert, react-expert, and langchain-expert agents.
   </commentary>
-  assistant: "I'll use the team-planner agent to create an implementation plan and coordinate the specialist agents."
+  assistant: "I'll use the team-leader agent to create an implementation plan and coordinate the specialist agents."
   </example>
 
   <example>
   Context: User wants to understand how to structure a new system.
   user: "Design the architecture for our new microservices platform"
-  assistant: "I'll use the team-planner agent to design the architecture and identify which specialists we need."
+  assistant: "I'll use the team-leader agent to design the architecture and identify which specialists we need."
   <commentary>
-  Architecture design is the team-planner's core responsibility — analyzing requirements and creating structured plans.
+  Architecture design is the team-leader's core responsibility — analyzing requirements and creating structured plans.
   </commentary>
   </example>
 
   <example>
   Context: User has a large task and needs it broken down.
   user: "Break this feature into tasks for the team"
-  assistant: "I'll use the team-planner agent to decompose this into specialist-assignable subtasks."
+  assistant: "I'll use the team-leader agent to decompose this into specialist-assignable subtasks."
   <commentary>
-  Task decomposition and agent delegation is a direct trigger for the team-planner orchestrator.
+  Task decomposition and agent delegation is a direct trigger for the team-leader orchestrator.
   </commentary>
   </example>
 model: inherit

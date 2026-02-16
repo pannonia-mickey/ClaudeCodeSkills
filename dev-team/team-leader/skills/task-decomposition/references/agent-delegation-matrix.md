@@ -350,11 +350,11 @@ Task: "Design Django models with proper relationships"
   ❌ database-expert (knows schema but not Django ORM conventions)
 ```
 
-### Rule 12: Architecture and Planning to team-planner
+### Rule 12: Architecture and Planning to team-leader
 
 ```
 Task: "Decide between Django and FastAPI for this project"
-  ✅ team-planner (architectural decision)
+  ✅ team-leader (architectural decision)
   ❌ django-expert or fastapi-expert (biased toward their framework)
 ```
 

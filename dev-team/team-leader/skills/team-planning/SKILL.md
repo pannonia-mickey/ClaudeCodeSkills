@@ -135,7 +135,7 @@ Schedule verification points where agents' work must align:
 ### Microservices (FastAPI)
 1. python-expert → Shared libraries, base patterns
 2. fastapi-expert → Service endpoints, inter-service communication
-3. team-planner → Service boundary definitions
+3. team-leader → Service boundary definitions
 
 ### AI-Powered Application
 1. langchain-expert → Chains, RAG, agent design

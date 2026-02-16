@@ -49,7 +49,7 @@ Assign each functional area to the agent with primary expertise:
 | TypeScript types/tooling | typescript-expert | — |
 | UX/UI design | uxui-designer | — |
 | Vue components | vue-expert | typescript-expert |
-| Architecture decisions | team-planner | — |
+| Architecture decisions | team-leader | — |
 
 ### Step 3: Define Dependencies
 
@@ -79,7 +79,7 @@ Feature: User Registration
   Task 1: User model + migration (django-expert)
   Task 2: Registration API endpoint (django-expert)
   Task 3: Registration form component (react-expert)
-  Task 4: End-to-end test (team-planner coordinates)
+  Task 4: End-to-end test (team-leader coordinates)
 ```
 
 **Best for**: Agile teams, incremental delivery, demos after each slice.
