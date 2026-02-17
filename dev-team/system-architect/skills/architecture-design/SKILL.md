@@ -1,6 +1,6 @@
 ---
 name: Architecture Design
-description: This skill should be used when the user asks to "design system architecture", "create an architecture", "choose architecture pattern", "design the system", "make an architecture decision", "evaluate architecture options", or needs guidance on system structure, layer separation, or technology selection.
+description: This skill should be used when the user asks to "design system architecture", "create an architecture", "choose architecture pattern", "design the system", "make an architecture decision", "evaluate architecture options", "recommend a folder structure", "define component boundaries", or needs guidance on system structure, layer separation, SOLID principles, or technology selection.
 ---
 
 # Architecture Design
@@ -127,3 +127,4 @@ For detailed patterns and decision frameworks, consult:
 
 - **`references/architecture-patterns.md`** — Detailed coverage of Monolith, Microservices, Hexagonal, Clean Architecture, Event-Driven, CQRS, and Serverless patterns
 - **`references/architecture-decisions.md`** — ADR templates, trade-off analysis frameworks (ATAM), scalability considerations, and NFR analysis
+- **`references/solid-architecture.md`** — SOLID principles applied at the system architecture level with concrete code examples

@@ -169,6 +169,16 @@
 | Framework SEO | SSR/SSG/ISR implications, Next.js/Nuxt/Remix/Astro SEO |
 | Rich Results | Google Rich Results requirements, testing, validation |
 
+### system-architect
+| Capability | Examples |
+|-----------|----------|
+| Architecture Design | Clean Architecture, Hexagonal, Layered, Vertical Slice, Modular Monolith |
+| Pattern Selection | Architecture selection decision tree, trade-off analysis, ADRs |
+| Folder Structure | Project layout, module organization, monorepo vs polyrepo |
+| Domain Design | DDD bounded contexts, aggregates, domain events |
+| Scalability | CQRS, Event Sourcing, microservices boundaries, message queues |
+| Cross-Cutting | API contracts, integration boundaries, component separation |
+
 ### rust-expert
 | Capability | Examples |
 |-----------|----------|
@@ -350,11 +360,11 @@ Task: "Design Django models with proper relationships"
   ❌ database-expert (knows schema but not Django ORM conventions)
 ```
 
-### Rule 12: Architecture and Planning to team-leader
+### Rule 12: Architecture Design to system-architect
 
 ```
 Task: "Decide between Django and FastAPI for this project"
-  ✅ team-leader (architectural decision)
+  ✅ system-architect (architectural decision, pattern selection)
   ❌ django-expert or fastapi-expert (biased toward their framework)
 ```
 

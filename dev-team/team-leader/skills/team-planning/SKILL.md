@@ -30,6 +30,7 @@ This skill provides the orchestration framework for coordinating specialist agen
 | react-expert | React 18+, TypeScript | Components, hooks, state management, testing |
 | rust-expert | Rust | Ownership, traits, async/Tokio, FFI, WebAssembly |
 | seo-expert | Technical SEO | Meta tags, structured data, Core Web Vitals, crawlability |
+| system-architect | System Architecture | Architecture design, folder structures, component boundaries, pattern selection |
 | tailwind-expert | Tailwind CSS | Utility-first styling, responsive design, custom themes |
 | testing-expert | QA, E2E, Performance | Test strategy, Playwright, k6, contract testing, security scanning |
 | typescript-expert | TypeScript 5+ | Type system, generics, tooling, migration, project config |
@@ -135,7 +136,7 @@ Schedule verification points where agents' work must align:
 ### Microservices (FastAPI)
 1. python-expert → Shared libraries, base patterns
 2. fastapi-expert → Service endpoints, inter-service communication
-3. team-leader → Service boundary definitions
+3. system-architect → Service boundary definitions
 
 ### AI-Powered Application
 1. langchain-expert → Chains, RAG, agent design
@@ -185,4 +186,3 @@ Schedule verification points where agents' work must align:
 For detailed patterns and techniques, consult:
 
 - **`references/orchestration-patterns.md`** — Delegation strategies, dependency graphs, parallel execution patterns
-- **`references/solid-architecture.md`** — SOLID principles applied at the system architecture level with concrete examples

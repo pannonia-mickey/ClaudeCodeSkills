@@ -49,7 +49,7 @@ Assign each functional area to the agent with primary expertise:
 | TypeScript types/tooling | typescript-expert | — |
 | UX/UI design | uxui-designer | — |
 | Vue components | vue-expert | typescript-expert |
-| Architecture decisions | team-leader | — |
+| Architecture decisions | system-architect | — |
 
 ### Step 3: Define Dependencies
 
