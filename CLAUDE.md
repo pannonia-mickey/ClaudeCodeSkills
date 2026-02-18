@@ -12,7 +12,7 @@ A **configuration and documentation repository** — no executable code, no buil
 - `.claude/skills/` — Meta-skills for building more agents and skills (agent-development, skill-development, engineer-skill-creator, prp-core-runner)
 - `.claude/commands/` — Slash commands (ultra-think, prp-core-*)
 - `.claude/PRPs/templates/` — PRP (Planning/Requirements/Procedure) templates
-- `dev-team/` — 25 domain-expert agents, each with 4–7 paired skills
+- `dev-team/` — 26 domain-expert agents, each with 4–7 paired skills
 
 ## Architecture: Agents vs Skills
 
@@ -50,13 +50,14 @@ Each skill lives in a directory under `skills/` containing:
 
 ## Dev-Team Structure
 
-25 expert agents in `dev-team/`, each paired with domain skills:
+26 expert agents in `dev-team/`, each paired with domain skills:
 - Frontend: react-expert, angular-expert, vue-expert, nextjs-expert, tailwind-expert
 - Backend: nodejs-expert, python-expert, fastapi-expert, django-expert, go-expert, rust-expert
 - Infrastructure: docker-expert, devops-expert, cloud-expert
 - Data: database-expert
 - Languages: typescript-expert, dotnet-expert, cpp-expert, langchain-expert
 - Quality: testing-expert, codebase-analyst, system-architect
+- Research: research-expert
 - Leadership: team-leader, uxui-designer, seo-specialist
 
 ## Naming Conventions
